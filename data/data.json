@@ -1,0 +1,13 @@
+{
+  "events": [
+    {
+      "map": "images/map-ca.png"
+    },
+    {
+      "map": "images/map-tx.png"
+    },
+    {
+      "map": "images/map-ny.png"
+    }
+  ]
+}

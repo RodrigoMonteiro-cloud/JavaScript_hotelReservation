@@ -1,0 +1,149 @@
+* {box-sizing: border-box;}
+body {font-family: Verdana, Arial, sans-serif;
+      background-color: blue;
+}
+header, h1, #wrapper{ margin-top: 0; }
+#wrapper {  background-color: aliceblue; 
+	        width: 90%;
+			margin: auto;
+            color: aliceblue;
+} 
+h1, h2 { color: #003300; }
+p {
+    color: black;
+}
+header { 
+/*    background-image: url(../images/header.jpg);*/
+         background-repeat: repeat;  	
+		 background-size: cover; 
+         background-position: center;
+         background-color: cornflowerblue;
+        
+}
+h1 { text-align: center;
+      font-size: 300%;
+	 padding: 5% 0;
+     text-shadow: 3px 3px 3px #F4E8BC;	
+}
+nav, main, aside {  padding: 0 1em; 
+}
+img { width: 100%; 
+      height: auto;
+}
+nav ul { list-style-type: none; 
+         font-size: 1.2em;
+		 padding-left: 0;
+}
+nav a { text-decoration: none;}
+nav a:link { color: #330000; }
+nav a:visited { color: #003300; }
+nav a:hover { color: #996600; }
+footer { text-align: center;
+         font-size: 80%;
+		 font-style: italic;
+		 color: #003300;
+		 padding: 2.5%;
+}
+    
+    #demo{
+        display: flex;
+        flex-direction: row;
+    }
+    nav{
+        flex: 1;
+    }
+    main{
+        flex: 7;
+    }
+    aside{
+        flex: 2;
+    }
+
+label {
+  color: black;
+  display: block;
+  margin: 10px 0 10px 0;
+  font-size: 18px;}
+sup, div {
+    color: red;
+}
+
+#newElement {
+    border: 1px solid black;
+    bottom: 50%;
+    background-color: white;
+    font-size: 100%;
+    text-align: center;
+}
+
+#roomsBooked{
+    border: 2px solid black;
+    height: 100px;
+    width: 400px;
+    float: right;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 15px;
+    color: black;
+    
+}
+
+#roomsLeft{
+    border: 2px solid black;
+    height: 100px;
+    width: 400px;
+    float: right;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 15px;
+    color: black;
+}
+
+#totalRooms{
+    border: 2px solid black;
+    height: 100px;
+    width: 400px;
+    float: right;
+    background-color: antiquewhite;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 15px;
+    color: black;
+}
+
+.cool{
+    color: green;
+}
+
+.hot{
+    color: red;
+}
+
+    
+@media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0; } 
+            #wrapper { width: auto; margin: 0; }
+		    h1 { font-size: 200%; }
+			nav li { padding: 0 0.5em; 
+				     font-size: 1.2em; 	}
+    #demo{
+        flex-direction: column;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+			
+}		
+@media only screen and (max-width: 768px) {
+    nav{
+        order: 1;
+    }
+    nav ul{
+        flex-wrap: wrap;
+    }
+}
+header, main, nav, footer, figure, figcaption { display: block; }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Radisson</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bookings.css" type="text/css">
+<link rel="icon" href="images/R.png" type="image/png">
+
+
+</head>
+<body>
+<div id="wrapper">
+  <header role="banner">
+    <h1>Radisson</h1>
+  </header>  
+  <div id="demo">
+  <nav role="navigation">
+    <ul>
+	 <li><a href="index.html">Home</a></li>
+     <li><a href="rooms.html">Rooms</a></li>
+     <li><a href="bookings.html">Bookings</a></li>
+	</ul> 
+   </nav>
+   <main role="main">   
+	<h2 id="bookRoomsHead">Book Rooms by entering the below details</h2>
+       <div id="totalRooms"></div>
+       <div id="roomsBooked"></div>
+       <div id="roomsLeft"></div>
+    
+    <form method="post" action="http://www.example.org/register" id="bookroom">
+
+        <label for="dropdownlist">Room Type<sup>*</sup>: </label>
+        <select id='dropdownlist'>
+            <option value="selectoption">select option</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+            <option value="Platinum">Platinum</option>
+        </select>
+        
+        <label for="firstname">First Name<sup>*</sup>: </label>
+        <input type="text" id="firstname" /><div id="firstname_feedback"></div>
+        
+        <label for="lastname">Last Name(Optional): </label>
+        <input type="text" id="lastname" />
+        
+        <label for="email">E-mail<sup>*</sup>: </label>
+        <input type="text" id="email" /><div id="email_feedback"></div>
+
+        <label for="contact">Contact No<sup>*</sup>: </label>
+        <input type="text" id="contact" /><div id="contact_feedback"></div><br/>
+
+        <input type="submit" value="Book Room" />
+        
+      </form>
+       
+   </main> 
+   <aside role="complementary">
+   <img src="images/pools.jpg"  alt="Pools of water in the rock">
+	 <h2>Guided Hikes</h2>
+	 <p>Radisson offers a free guided hike each week for guests. Explore the Seven Sacred Pools along the Soldiers Pass Trail.</p>
+   </aside>
+   </div> <!-- end of flex container -->
+   <footer id="footer" role="contentinfo"></footer>
+</div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bookings.js"></script>
+</body>
+</html>
