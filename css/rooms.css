@@ -135,7 +135,7 @@ footer { text-align: center;
 }		
 @media only screen and (max-width: 768px) {
     nav{
-        order: 1;
+        order: 0;
     }
     nav ul{
         flex-wrap: wrap;
