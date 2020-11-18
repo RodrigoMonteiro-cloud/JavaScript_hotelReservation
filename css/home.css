@@ -29,14 +29,35 @@ header nav {
     background-color:  #6d6d6d;
     opacity: 0.9;
 }
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ .logo{
+    width: 65px;
+    height: 40px;
+    background-image: url(../images/castle-icon.png);
+    background-size: 65px 40px;
+    position: absolute;
+    left: 25px;
+    z-index: 1000;
+    opacity: 0.7;
+  }
+.logo:hover {
+    opacity: 1;
+    cursor: pointer;
+}
 ul {
     list-style:none; margin:0; padding:10px; opacity: 1;
+}
+ul li:nth-child(1) {
+    margin-left: 100px;
 }
 ul li {
     display:inline-block; opacity: 1;
 }
 ul li a{
-    font-size: 0.90em; text-decoration: none; color: #FFF; padding: 10px 30px; opacity: 1;
+    font-size: 0.90em; text-decoration: none; color: #FFF; padding: 10px 35px; opacity: 1;
 }
 ul li a:hover {
     background-color: #ff6c6c; opacity: 1;
@@ -80,6 +101,10 @@ ul li a:hover {
     font-size: 30px;
     box-shadow:1px 1px 2px #888;
     z-index: 1000;
+    opacity: 0.7;
+}
+.whatsapp-link:hover {
+    opacity: 1;
 }
 .fa-whatsapp {
     margin-top: 5px;
