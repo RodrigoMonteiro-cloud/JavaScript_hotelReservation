@@ -39,6 +39,7 @@ header nav {
     background-image: url(../images/castle-icon.png);
     background-size: 65px 40px;
     position: absolute;
+    margin-top: -41px;
     left: 25px;
     z-index: 1000;
     opacity: 0.7;
