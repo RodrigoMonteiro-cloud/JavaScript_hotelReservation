@@ -1,0 +1,188 @@
+main,body, html{
+    height: 100%;
+    margin: 0;
+}
+.fundo {
+    background-image: url(../imagens/Estátuas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    opacity: 0.2;
+}
+.fundo2 {
+    background-image: url(../imagens/castle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    margin-top: -100vh;
+}
+header nav {
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    margin: auto;
+    background-color:  #6d6d6d;
+    opacity: 0.87;
+}
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ .logo{
+    width: 70px;
+    height: 45px;
+    background-image: url(../imagens/castle-icon.png);
+    background-size: 70px 45px;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: -54px;
+    left: 25px;
+    z-index: 1000;
+    opacity: 0.7;
+  }
+.logo:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+ul {
+    list-style:none; margin:0; padding:20px;
+}
+ul li:nth-child(1) {
+    margin-left: 100px;
+}
+ul li {
+    display:inline-block;
+}
+ul li a{
+    font-size: 0.90em; text-decoration: none; color: #FFF; padding: 21px 35px;
+}
+ul li a:hover {
+    background-color: #ff6c6c;
+}
+
+.textbox {
+    position: absolute;
+    top: 13vh;
+  }
+.textbox2 {
+    position: absolute;
+    top: 45vh;
+  }
+#text {
+    padding-left: 45vw;
+    text-align: center;
+    color: rgb(24, 24, 24);
+    font-family: fantasy sans-serif;
+    font-size: clamp(1em, 3em + 1vw, 4em);
+  }
+#text2 {
+    padding-left: 53vw;
+    text-align: left;
+    margin-top: 60px;
+    color: #555454;
+    font-family: sans-serif;
+    font-size: clamp(0.5em, 1em + 0.8   vw, 1.5em);
+    opacity: 1;
+
+  }
+.whatsapp-link{
+    position: fixed;
+    width: 70px;
+    height: 40px;
+    bottom: 9px;
+    left: 9px;
+    background-color: rgb(0, 255, 21);
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow:1px 1px 2px #888;
+    z-index: 1000;
+    opacity: 0.7;
+}
+.whatsapp-link:hover {
+    opacity: 1;
+}
+.fa-whatsapp {
+    margin-top: 5px;
+}
+button{
+    background-color: rgb(180, 155, 204);
+    color: white;
+    font-size: 17px;
+    width: 111px;
+    height: 37px;
+    margin: -20px;
+    margin-top: 55px;
+    float: right;
+    margin-left: 30px;
+    opacity: 0.97;
+    border: solid 1px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: white;
+    color: rgb(180, 155, 204);
+    cursor: pointer;
+}
+
+/* Container */
+
+	.container {
+		margin: 0 auto;
+		max-width: 100%;
+		width: 1400px;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			.container {
+				width: 1200px;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.container {
+				width: 960px;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.container {
+				width: 95%;
+			}
+
+		}
+
+		@media screen and (max-width: 840px) {
+
+			.container {
+				width: 95%;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.container {
+				width: 90%;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.container {
+				width: 100%;
+			}
+
+		}

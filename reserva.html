@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>Reserva</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bookings.css" type="text/css">
+<link rel="icon" href="imagens/castle-icon.png" type="image/png">
+
+</head>
+<body>
+<div id="wrapper">
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="reserva.html">Reserva</a></li>
+ </ul>
+  <header role="banner">
+    <h1>Cadastro</h1>
+  </header>
+  <div id="demo">
+  <nav role="navigation">
+   <main role="main">
+	<h2 id="bookRoomsHead"></h2>
+       <div id="totalRooms"></div>
+       <div id="roomsBooked"></div>
+       <div id="roomsLeft"></div>
+
+    <form method="post" action="http://www.example.org/register" id="bookroom">
+
+        <label for="dropdownlist">Suítes</label>
+        <select id='dropdownlist'>
+            <option value="selectoption">Selecione</option>
+            <option value="Silver">Silver</option>
+            <option value="Gold">Gold</option>
+            <option value="Platinum">Platinum</option>
+        </select>
+
+        <label for="firstname">Primeiro nome: </label>
+        <input type="text" id="firstname" /><div id="firstname_feedback"></div>
+
+        <label for="lastname">Sobrenome: </label>
+        <input type="text" id="lastname" />
+
+        <label for="email"> E-mail: </label>
+        <input type="text" id="email" /><div id="email_feedback"></div>
+
+        <label for="contact">Contato: </label>
+        <input type="text" id="contact" /><div id="contact_feedback"></div><br/>
+
+        <button type="submit" value="book room" class="button">Verificar</button>
+
+      </form>
+
+   </main>
+  
+   </div> <!-- end of flex container -->
+   <footer id="footer" role="contentinfo"></footer>
+</div>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/reserva.js"></script>
+</body>
+</html>
